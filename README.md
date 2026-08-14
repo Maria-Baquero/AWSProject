@@ -77,24 +77,6 @@ Permite gestionar clientes, mascotas y citas médicas con autenticación JWT, in
 
 ---
 
-## 🏗 Arquitectura AWS
-
-```
-Internet → Internet Gateway → VPC (10.0.0.0/16)
-                                ├── Subnet Pública (10.0.1.0/24)
-                                │     └── EC2 t2.micro (Node.js + Nginx)
-                                │           • Express API (puerto 3000)
-                                │           • Frontend estático (Vite build)
-                                │           • Nginx reverse proxy (puerto 80/443)
-                                │           • PM2 process manager
-                                │
-                                ├── Subnet Privada 1 (10.0.2.0/24, us-east-1a)
-                                │     └── RDS PostgreSQL db.t3.micro
-                                │
-                                └── Subnet Privada 2 (10.0.3.0/24, us-east-1b)
-                                      └── (Requerida por RDS para HA)
-```
-
 ### Seguridad
 
 - 🔒 RDS en subnets privadas — sin acceso público desde Internet
