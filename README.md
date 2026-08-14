@@ -40,40 +40,40 @@ Permite gestionar clientes, mascotas y citas médicas con autenticación JWT, in
 
 ### Backend
 
-| Tecnología | Uso |
-|---|---|
-| 🟢 **Node.js** | Runtime del servidor |
-| 🔷 **TypeScript** | Tipado estático |
-| ⚡ **Express** | Framework HTTP |
-| 🐘 **PostgreSQL** | Base de datos relacional |
-| 🔑 **JSON Web Tokens** | Autenticación stateless |
-| 🛡️ **Zod** | Validación de esquemas |
-| 🔐 **bcrypt** | Hashing de contraseñas |
-| 📦 **pg** | Driver PostgreSQL para Node.js |
+| Tecnología             | Uso                            |
+| ---------------------- | ------------------------------ |
+| 🟢 **Node.js**         | Runtime del servidor           |
+| 🔷 **TypeScript**      | Tipado estático                |
+| ⚡ **Express**         | Framework HTTP                 |
+| 🐘 **PostgreSQL**      | Base de datos relacional       |
+| 🔑 **JSON Web Tokens** | Autenticación stateless        |
+| 🛡️ **Zod**             | Validación de esquemas         |
+| 🔐 **bcrypt**          | Hashing de contraseñas         |
+| 📦 **pg**              | Driver PostgreSQL para Node.js |
 
 ### Frontend
 
-| Tecnología | Uso |
-|---|---|
-| ⚛️ **React 19** | Biblioteca de UI |
-| 🔷 **TypeScript** | Tipado estático |
-| ⚡ **Vite** | Build tool y dev server |
-| 🎨 **Tailwind CSS** | Estilos utility-first |
+| Tecnología            | Uso                            |
+| --------------------- | ------------------------------ |
+| ⚛️ **React 19**       | Biblioteca de UI               |
+| 🔷 **TypeScript**     | Tipado estático                |
+| ⚡ **Vite**           | Build tool y dev server        |
+| 🎨 **Tailwind CSS**   | Estilos utility-first          |
 | 🔄 **TanStack Query** | Gestión de estado del servidor |
-| 🧭 **React Router 7** | Enrutamiento SPA |
-| 📡 **Axios** | Cliente HTTP |
+| 🧭 **React Router 7** | Enrutamiento SPA               |
+| 📡 **Axios**          | Cliente HTTP                   |
 
 ### Infraestructura y DevOps
 
-| Tecnología | Uso |
-|---|---|
-| ☁️ **AWS EC2** | Servidor de aplicación |
-| 🗄️ **AWS RDS** | Base de datos gestionada |
-| 🌐 **AWS VPC** | Red virtual aislada |
-| 🔀 **Nginx** | Reverse proxy y servidor de estáticos |
-| 🔄 **PM2** | Process manager en producción |
-| 🧪 **Vitest** | Testing unitario e integración |
-| 🎯 **fast-check** | Property-based testing |
+| Tecnología        | Uso                                   |
+| ----------------- | ------------------------------------- |
+| ☁️ **AWS EC2**    | Servidor de aplicación                |
+| 🗄️ **AWS RDS**    | Base de datos gestionada              |
+| 🌐 **AWS VPC**    | Red virtual aislada                   |
+| 🔀 **Nginx**      | Reverse proxy y servidor de estáticos |
+| 🔄 **PM2**        | Process manager en producción         |
+| 🧪 **Vitest**     | Testing unitario e integración        |
+| 🎯 **fast-check** | Property-based testing                |
 
 ---
 
@@ -168,17 +168,17 @@ La aplicación estará disponible en `http://localhost:5173` con proxy al backen
 
 ## 🔐 Variables de Entorno
 
-| Variable | Descripción | Ejemplo |
-|----------|-------------|---------|
-| `DB_HOST` | Host de PostgreSQL | `localhost` |
-| `DB_PORT` | Puerto de PostgreSQL | `5432` |
-| `DB_NAME` | Nombre de la base de datos | `veterinary_clinic` |
-| `DB_USER` | Usuario de PostgreSQL | `postgres` |
-| `DB_PASSWORD` | Contraseña de PostgreSQL | `your_password` |
-| `JWT_SECRET` | Clave secreta para firmar tokens | `your_jwt_secret` |
-| `JWT_EXPIRATION` | Tiempo de expiración del token | `24h` |
-| `PORT` | Puerto del servidor | `3000` |
-| `NODE_ENV` | Entorno de ejecución | `development` / `production` |
+| Variable         | Descripción                      | Ejemplo                      |
+| ---------------- | -------------------------------- | ---------------------------- |
+| `DB_HOST`        | Host de PostgreSQL               | `localhost`                  |
+| `DB_PORT`        | Puerto de PostgreSQL             | `5432`                       |
+| `DB_NAME`        | Nombre de la base de datos       | `veterinary_clinic`          |
+| `DB_USER`        | Usuario de PostgreSQL            | `postgres`                   |
+| `DB_PASSWORD`    | Contraseña de PostgreSQL         | `your_password`              |
+| `JWT_SECRET`     | Clave secreta para firmar tokens | `your_jwt_secret`            |
+| `JWT_EXPIRATION` | Tiempo de expiración del token   | `24h`                        |
+| `PORT`           | Puerto del servidor              | `3000`                       |
+| `NODE_ENV`       | Entorno de ejecución             | `development` / `production` |
 
 ---
 
@@ -186,23 +186,23 @@ La aplicación estará disponible en `http://localhost:5173` con proxy al backen
 
 ### Backend (raíz del proyecto)
 
-| Script | Descripción |
-|--------|-------------|
-| `npm run dev` | Inicia el servidor en modo desarrollo con ts-node |
-| `npm run build` | Compila TypeScript a JavaScript en `dist/` |
-| `npm start` | Ejecuta el servidor compilado (producción) |
-| `npm test` | Ejecuta los tests con Vitest |
-| `npm run test:watch` | Tests en modo watch |
+| Script               | Descripción                                       |
+| -------------------- | ------------------------------------------------- |
+| `npm run dev`        | Inicia el servidor en modo desarrollo con ts-node |
+| `npm run build`      | Compila TypeScript a JavaScript en `dist/`        |
+| `npm start`          | Ejecuta el servidor compilado (producción)        |
+| `npm test`           | Ejecuta los tests con Vitest                      |
+| `npm run test:watch` | Tests en modo watch                               |
 
 ### Frontend (`frontend/`)
 
-| Script | Descripción |
-|--------|-------------|
-| `npm run dev` | Inicia Vite dev server con HMR |
-| `npm run build` | Compila TypeScript y genera build de producción |
-| `npm run preview` | Previsualiza el build de producción |
-| `npm run lint` | Ejecuta ESLint |
-| `npm test` | Ejecuta tests con Vitest |
+| Script            | Descripción                                     |
+| ----------------- | ----------------------------------------------- |
+| `npm run dev`     | Inicia Vite dev server con HMR                  |
+| `npm run build`   | Compila TypeScript y genera build de producción |
+| `npm run preview` | Previsualiza el build de producción             |
+| `npm run lint`    | Ejecuta ESLint                                  |
+| `npm test`        | Ejecuta tests con Vitest                        |
 
 ---
 
@@ -263,40 +263,40 @@ veterinary-AWS/
 
 ### Autenticación
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| POST | `/api/auth/login` | Iniciar sesión |
-| POST | `/api/auth/register` | Registrar usuario |
+| Método | Ruta                 | Descripción       |
+| ------ | -------------------- | ----------------- |
+| POST   | `/api/auth/login`    | Iniciar sesión    |
+| POST   | `/api/auth/register` | Registrar usuario |
 
 ### Clientes
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| GET | `/api/clients` | Listar clientes (paginado) |
-| GET | `/api/clients/:id` | Obtener cliente por ID |
-| POST | `/api/clients` | Crear cliente |
-| PUT | `/api/clients/:id` | Actualizar cliente |
+| Método | Ruta               | Descripción                |
+| ------ | ------------------ | -------------------------- |
+| GET    | `/api/clients`     | Listar clientes (paginado) |
+| GET    | `/api/clients/:id` | Obtener cliente por ID     |
+| POST   | `/api/clients`     | Crear cliente              |
+| PUT    | `/api/clients/:id` | Actualizar cliente         |
 
 ### Mascotas
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| GET | `/api/pets` | Listar mascotas (paginado/búsqueda) |
-| GET | `/api/pets/all` | Listar todas las mascotas |
-| GET | `/api/pets/:id` | Obtener mascota por ID |
-| POST | `/api/pets` | Crear mascota |
-| PUT | `/api/pets/:id` | Actualizar mascota |
-| DELETE | `/api/pets/:id` | Desactivar mascota (soft delete) |
+| Método | Ruta            | Descripción                         |
+| ------ | --------------- | ----------------------------------- |
+| GET    | `/api/pets`     | Listar mascotas (paginado/búsqueda) |
+| GET    | `/api/pets/all` | Listar todas las mascotas           |
+| GET    | `/api/pets/:id` | Obtener mascota por ID              |
+| POST   | `/api/pets`     | Crear mascota                       |
+| PUT    | `/api/pets/:id` | Actualizar mascota                  |
+| DELETE | `/api/pets/:id` | Desactivar mascota (soft delete)    |
 
 ### Citas
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| GET | `/api/appointments?date=YYYY-MM-DD` | Citas por fecha |
-| GET | `/api/appointments?petId=uuid` | Citas por mascota |
-| POST | `/api/appointments` | Crear cita |
-| PATCH | `/api/appointments/:id/cancel` | Cancelar cita |
-| PATCH | `/api/appointments/:id/complete` | Completar cita |
+| Método | Ruta                                | Descripción       |
+| ------ | ----------------------------------- | ----------------- |
+| GET    | `/api/appointments?date=YYYY-MM-DD` | Citas por fecha   |
+| GET    | `/api/appointments?petId=uuid`      | Citas por mascota |
+| POST   | `/api/appointments`                 | Crear cita        |
+| PATCH  | `/api/appointments/:id/cancel`      | Cancelar cita     |
+| PATCH  | `/api/appointments/:id/complete`    | Completar cita    |
 
 > Todos los endpoints (excepto auth) requieren header `Authorization: Bearer <token>`
 
@@ -330,10 +330,10 @@ cd /home/ec2-user/app && ./run-migrations.sh
 
 ### Costos estimados
 
-| Escenario | Costo mensual |
-|-----------|---------------|
-| Con Free Tier | ~$0/mes |
-| Post Free Tier | ~$25-30/mes |
+| Escenario      | Costo mensual |
+| -------------- | ------------- |
+| Con Free Tier  | ~$0/mes       |
+| Post Free Tier | ~$25-30/mes   |
 
 ---
 
